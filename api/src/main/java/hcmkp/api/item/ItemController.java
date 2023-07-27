@@ -18,8 +18,8 @@ public class ItemController {
     private ItemRepo itemRepo;
 
     @GetMapping("")
-    public List<Item> getItems() {
-        return itemRepo.findAll();
+    public ResponseEntity<List<Item>> getItems() {
+        return new ResponseEntity<List<Item>>(itemRepo.findAll(), null, 200);
     }
 
     @GetMapping("/{item_id}")

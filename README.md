@@ -1,2 +1,0 @@
-# HCMKP
-A marketplace app.
